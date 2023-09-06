@@ -1,4 +1,4 @@
-package com.webTest.controller.user;
+package com.webTest.controller.board01;
 
 import com.webTest.controller.Controller;
 import com.webTest.controller.DispatcherServlet;
@@ -11,16 +11,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/user/*")
-public class UserDispatcherServlet extends DispatcherServlet {
-    private UserHandlerMapping handlerMapping;
+@WebServlet("/board/*")
+public class Board01DispatcherServlet extends DispatcherServlet {
+
+    private Board01HandlerMapping handlerMapping;
     private ViewResolver viewResolver;
 
     @Override
     public void init() throws ServletException {
-        handlerMapping = new UserHandlerMapping();
+        handlerMapping = new Board01HandlerMapping();
         viewResolver = new ViewResolver();
-        viewResolver.setPrefix("/WEB-INF/view/user/");
+        viewResolver.setPrefix("/WEB-INF/view/board/");
     }
 
     @Override

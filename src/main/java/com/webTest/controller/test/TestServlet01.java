@@ -8,13 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/test01")
+@WebServlet("/test01/*")
 public class TestServlet01 extends HttpServlet {
-
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher dispatcher = request.getRequestDispatcher("test.jsp");
-        dispatcher.forward(request, response);
+        String test = "test";
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("./WEB-INF/view/tecsttest/test01.jsp");
+//        dispatcher.forward(request, response);
 
+        RequestDispatcher dispatcher = request.getRequestDispatcher("./WEB-INF/view/testtest/test01.jsp");
+        dispatcher.forward(request, response);
+//        response.sendRedirect("/WEB-INF/view/testtest/test01.jsp");
     }
 }

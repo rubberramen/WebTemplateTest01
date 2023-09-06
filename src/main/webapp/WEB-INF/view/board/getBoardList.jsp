@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ include file="../layout/header.jsp" %>
+<%@ include file="../../layout/header.jsp" %>
 
 <center>
 <!-- 검색 시작 -->
@@ -28,9 +28,9 @@
 
 <table border="1" cellpadding="0" cellspacing="0" width="700">
 <tr>
-	<th bgcolor="orange" width="100">번호</th>
+	<th bgcolor="orange" width="100">번호😜</th>
 	<th bgcolor="orange" width="200">제목😜</th>
-	<th bgcolor="orange" width="150">작성자</th>
+	<th bgcolor="orange" width="150">작성자🤣</th>
 	<th bgcolor="orange" width="150">등록일</th>
 	<th bgcolor="orange" width="100">조회수</th>
 </tr>
@@ -48,4 +48,4 @@
 </table>
 </center>
 
-<%@ include file="../layout/footer.jsp" %>
+<%@ include file="../../layout/footer.jsp" %>

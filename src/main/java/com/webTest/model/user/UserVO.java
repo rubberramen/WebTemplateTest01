@@ -10,20 +10,20 @@ import javax.servlet.http.HttpSessionBindingListener;
 @Getter
 @Setter
 @ToString
-public class UserVO implements HttpSessionBindingListener {
+public class UserVO /*implements HttpSessionBindingListener */{
 
     private String id;
     private String password;
     private String name;
     private String role;
 
-//    @Override
-    public void valueBound(HttpSessionBindingEvent event) {
-        System.out.println("---> UserVO 객체가 세션에 등록됨");
-    }
+////    @Override
+//    public void valueBound(HttpSessionBindingEvent event) {
+//        System.out.println("---> UserVO 객체가 세션에 등록됨");
+//    }
 
 //    @Override
-    public void valueUnbound(HttpSessionBindingEvent event) {
-        System.out.println("---> UserVO 객체가 세션에서 제거됨.");
-    }
+//    public void valueUnbound(HttpSessionBindingEvent event) {
+//        System.out.println("---> UserVO 객체가 세션에서 제거됨.");
+//    }
 }

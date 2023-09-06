@@ -1,11 +1,8 @@
-package com.webTest.controller.user;
+package com.webTest.controller.test.test01;
 
-import com.webTest.controller.ViewResolver;
-
-public class UserViewResolver extends ViewResolver {
-
+public class Test01ViewResolver {
     public String prefix;
-    public String suffix = ".jsp";
+    public String suffix;
 
     public void setSuffix(String suffix) {
         this.suffix = suffix;

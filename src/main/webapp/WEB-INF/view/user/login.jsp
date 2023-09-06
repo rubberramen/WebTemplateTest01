@@ -1,9 +1,9 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 
-<%@ include file="../layout/header.jsp" %>
+<%@ include file="../../layout/header.jsp" %>
 
 <center>
-<form action="login.do" method="post">
+<form action="/user/login" method="post">
 
 	<table border="1" cellpadding="0" cellspacing="0">
 		<tr>
@@ -25,4 +25,4 @@
 <a href="insertUser.html">회원 가입</a>
 <hr>
 </center>
-<%@ include file="../layout/footer.jsp" %>
+<%@ include file="../../layout/footer.jsp" %>

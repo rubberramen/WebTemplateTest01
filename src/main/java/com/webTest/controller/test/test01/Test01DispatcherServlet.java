@@ -1,20 +1,25 @@
-package com.webTest.controller;
+package com.webTest.controller.test.test01;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class DispatcherServlet extends HttpServlet {
+@WebServlet("/testDomain01/*")
+public class Test01DispatcherServlet extends HttpServlet {
 
-    private HandlerMapping handlerMapping;
-    private ViewResolver viewResolver;
+    private Test01HandlerMapping handlerMapping;
+    private Test01ViewResolver viewResolver;
 
     @Override
     public void init() throws ServletException {
-
+        handlerMapping = new Test01HandlerMapping();
+        viewResolver = new Test01ViewResolver();
+        viewResolver.setPrefix("/WEB-INF/view/test01/");
+        viewResolver.setSuffix(".jsp");
     }
 
     @Override
@@ -22,7 +27,7 @@ public class DispatcherServlet extends HttpServlet {
         String uri = request.getRequestURI();
         String path = uri.substring(uri.lastIndexOf("/"));
 
-        Controller ctrl = handlerMapping.getController(path);
+        Test01Controller ctrl = handlerMapping.getController(path);
 
         String viewName = ctrl.handleRequest(request, response);
 

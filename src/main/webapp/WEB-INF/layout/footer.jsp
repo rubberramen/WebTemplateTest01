@@ -4,7 +4,7 @@
 <hr>
 <br>
 <center>
-footer입니😁
+footer입니당😁
 </center>
 </body>
 </html>

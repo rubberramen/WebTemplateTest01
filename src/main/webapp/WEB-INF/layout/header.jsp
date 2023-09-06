@@ -1,4 +1,4 @@
-<%@page import="com.ssamz.biz.user.UserVO"%>
+<%@page import="com.webTest.model.user.UserVO"%>
 <%@ page contentType="text/html; charset=UTF-8"
          errorPage="errors/boardError.jsp"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
